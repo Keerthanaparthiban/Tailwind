@@ -9,20 +9,40 @@
   </head>
   <body class="text-gray-600 font-body bg-gray-100">
     <div class="grid md:grid-cols-3">
-      <div class="md:col-span-1">
+      <div class="md:col-span-1 md:flex md:justify-end">
         <!--begin of nav-->
-        <nav>
-          <div>
+        <nav class="text-right">
+          <div class="flex justify-between items-center">
             <h1 class="font-bold uppercase p-4 border-b border-gray-100">
               <a href="/" class="hover:text-gray-700">Food Shinobi</a>
             </h1>
+            <div class="px-4 cursor-pointer md:hidden" id="burger">
+              <svg
+                class="w-6"
+                xmlns="http://www.w3.org/2000/svg"
+                fill="none"
+                viewBox="0 0 24 24"
+                strokeWidth="{1.5}"
+                stroke="currentColor"
+                className="w-6 h-6"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5"
+                />
+              </svg>
+            </div>
           </div>
-          <ul>
-            <li class="text-gray-700 font-bold">
-              <a href="#">
+          <ul class="text-sm mt-6 hidden md:block" id="menu">
+            <li class="text-gray-700 font-bold py-1">
+              <a
+                href="#"
+                class="px-4 flex justify-end border-r-4 border-primary"
+              >
                 <span>Home</span>
                 <svg
-                  class="w-5"
+                  class="w-5 ml-2"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -38,11 +58,14 @@
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#">
+            <li class="py-1">
+              <a
+                href="#"
+                class="px-4 flex justify-end border-r-4 border-transparent"
+              >
                 <span>About</span>
                 <svg
-                  class="w-5"
+                  class="w-5 ml-2"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -58,11 +81,14 @@
                 </svg>
               </a>
             </li>
-            <li>
-              <a href="#">
+            <li class="py-1">
+              <a
+                href="#"
+                class="px-4 flex justify-end border-r-4 border-transparent"
+              >
                 <span>Contact</span>
                 <svg
-                  class="w-5"
+                  class="w-5 ml-2"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -118,9 +144,9 @@
                 <span class="font-bold">Gyoza</span>
                 <span class="block text-sm">Recipe by Neji</span>
               </div>
-              <div class="badge">
+              <div class="badge flex items-center">
                 <svg
-                  class="w-5 inline-block"
+                  class="w-5 mr-1"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -149,9 +175,9 @@
                 <span class="font-bold">Champon</span>
                 <span class="block text-sm">Recipe by TenTen</span>
               </div>
-              <div class="badge">
+              <div class="badge flex items-center">
                 <svg
-                  class="w-5 inline-block"
+                  class="w-5 mr-1"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -179,9 +205,9 @@
                 <span class="font-bold">Onigiri</span>
                 <span class="block text-sm">Recipe by Rock Lee</span>
               </div>
-              <div class="badge">
+              <div class="badge flex items-center">
                 <svg
-                  class="w-5 inline-block"
+                  class="w-5 mr-1"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -209,9 +235,9 @@
                 <span class="font-bold">karaage</span>
                 <span class="block text-sm">Recipe by Choji</span>
               </div>
-              <div class="badge">
+              <div class="badge flex items-center">
                 <svg
-                  class="w-5 inline-block"
+                  class="w-5 mr-1"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -239,9 +265,9 @@
                 <span class="font-bold">Soba</span>
                 <span class="block text-sm">Recipe by Ino</span>
               </div>
-              <div class="badge">
+              <div class="badge flex items-center">
                 <svg
-                  class="w-5 inline-block"
+                  class="w-5 mr-1"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -269,9 +295,9 @@
                 <span class="font-bold">Sukiyaki</span>
                 <span class="block text-sm">Recipe by Shikamaru</span>
               </div>
-              <div class="badge">
+              <div class="badge flex items-center">
                 <svg
-                  class="w-5 inline-block"
+                  class="w-5 mr-1"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -299,9 +325,9 @@
                 <span class="font-bold">Katsudon with Miso soup</span>
                 <span class="block text-sm">Recipe by Shino</span>
               </div>
-              <div class="badge">
+              <div class="badge flex items-center">
                 <svg
-                  class="w-5 inline-block"
+                  class="w-5 mr-1"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -329,9 +355,9 @@
                 <span class="font-bold">Tempura</span>
                 <span class="block text-sm">Recipe by Kiba</span>
               </div>
-              <div class="badge">
+              <div class="badge flex items-center">
                 <svg
-                  class="w-5 inline-block"
+                  class="w-5 mr-1"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -359,9 +385,9 @@
                 <span class="font-bold">Udon</span>
                 <span class="block text-sm">Recipe by Hinata</span>
               </div>
-              <div class="badge">
+              <div class="badge flex items-center">
                 <svg
-                  class="w-5 inline-block"
+                  class="w-5 mr-1"
                   xmlns="http://www.w3.org/2000/svg"
                   fill="none"
                   viewBox="0 0 24 24"
@@ -403,5 +429,6 @@
         </div>
       </main>
     </div>
+    <script src="index.js"></script>
   </body>
 </html>
