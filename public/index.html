@@ -7,7 +7,7 @@
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./styles.css" />
   </head>
-  <body class="text-gray-600 font-body">
+  <body class="text-gray-600 font-body bg-gray-100">
     <div>
       <div>
         <!--begin of nav-->
@@ -38,14 +38,14 @@
       </div>
       <!--end nav-->
       <main class="px-16 py-6">
-        <div>
+        <div class="flex justify-center md:justify-end">
           <a href="#" class="text-primary">Log In</a>
-          <a href="#" class="text-primary">Sign up</a>
+          <a href="#" class="text-primary ml-2">Sign up</a>
         </div>
 
         <header>
           <h2 class="text-gray-700 text-6xl font-semibold">Recipes</h2>
-          <h3 class="text-2xl font-semibold">For Shinobi</h3>
+          <h3 class="text-2xl font-semibold mt-6">For Shinobi</h3>
         </header>
 
         <div>
@@ -55,11 +55,15 @@
 
           <div class="mt-8">
             <!--Cards go here-->
-            <div>
-              <img src="assets/gyoza.png" alt="" />
-              <div>
-                <span>Ichiraku Ramen</span>
-                <span>Recipe by Ramen Guy</span>
+            <div class="bg-white rounded overflow-hidden shadow-md">
+              <img
+                src="assets/gyoza.png"
+                alt=""
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Gyoza</span>
+                <span class="block text-sm">Recipe by Neji</span>
               </div>
             </div>
           </div>
@@ -77,7 +81,7 @@
               </div>
             </div>
           </div>
-          <div>
+          <div class="flex justify-center">
             <div class="bg-secondary-100 text-secondary-200">Load more</div>
           </div>
         </div>
