@@ -8,8 +8,8 @@
     <link rel="stylesheet" href="./styles.css" />
   </head>
   <body class="text-gray-600 font-body bg-gray-100">
-    <div>
-      <div>
+    <div class="grid md:grid-cols-3">
+      <div class="md:col-span-1">
         <!--begin of nav-->
         <nav>
           <div>
@@ -37,7 +37,7 @@
         </nav>
       </div>
       <!--end nav-->
-      <main class="px-16 py-6">
+      <main class="px-16 py-6 md:col-span-2">
         <div class="flex justify-center md:justify-end">
           <a href="#" class="text-primary">Log In</a>
           <a href="#" class="text-primary ml-2">Sign up</a>
@@ -53,7 +53,7 @@
             Latest Recipes
           </h4>
 
-          <div class="mt-8">
+          <div class="mt-8 grid lg:grid-cols-3 gap-10">
             <!--Cards go here-->
             <div class="card">
               <img
@@ -97,6 +97,96 @@
               </div>
               <div class="badge">
                 <span>25 mins</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="assets/karaage.png"
+                alt="karaage"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">karaage</span>
+                <span class="block text-sm">Recipe by Choji</span>
+              </div>
+              <div class="badge">
+                <span>25 mins</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="assets/soba.png"
+                alt="Soba"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Soba</span>
+                <span class="block text-sm">Recipe by Ino</span>
+              </div>
+              <div class="badge">
+                <span>20 mins</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="assets/sukiyaki.png"
+                alt="sukiyaki"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Sukiyaki</span>
+                <span class="block text-sm">Recipe by Shikamaru</span>
+              </div>
+              <div class="badge">
+                <span>60 mins</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="assets/katsudon.png"
+                alt="katsudon"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Katsudon</span>
+                <span class="block text-sm">Recipe by Shino</span>
+              </div>
+              <div class="badge">
+                <span>80 mins</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="assets/tempura.png"
+                alt="tempura"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Tempura</span>
+                <span class="block text-sm">Recipe by Kiba</span>
+              </div>
+              <div class="badge">
+                <span>30 mins</span>
+              </div>
+            </div>
+
+            <div class="card">
+              <img
+                src="assets/udon.png"
+                alt="Udon"
+                class="w-full h-32 sm:h-48 object-cover"
+              />
+              <div class="m-4">
+                <span class="font-bold">Udon</span>
+                <span class="block text-sm">Recipe by Hinata</span>
+              </div>
+              <div class="badge">
+                <span>20 mins</span>
               </div>
             </div>
           </div>
